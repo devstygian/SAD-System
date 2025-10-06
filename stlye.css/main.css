@@ -1,0 +1,34 @@
+/* Basic custom styles for the navbar */
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Make navbar fixed and always on top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050; /* higher than carousel */
+}
+
+body {
+  padding-top: 56px; /* adjust if navbar height changes */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/* Uniform carousel image size */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
